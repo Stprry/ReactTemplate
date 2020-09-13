@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ImageBackground, StyleSheet, View, Image, Text } from "react-native";
-
+import color from "../config/color";
 export default class HomeScreen extends Component {
   render() {
     return (
@@ -15,8 +15,12 @@ export default class HomeScreen extends Component {
           ></Image>
           <Text>Template lorem ipsum</Text>
         </View>
-        <View style={styles.loginBtn}></View>
-        <View style={styles.signUpBtn}></View>
+        <View style={styles.loginBtn}>
+          <Text>Log In</Text>
+        </View>
+        <View style={styles.signUpBtn}>
+          <Text>Register</Text>
+        </View>
       </ImageBackground>
     );
   }
@@ -24,19 +28,23 @@ export default class HomeScreen extends Component {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: "tomato",
+    backgroundColor: color.primary,
     justifyContent: "flex-end",
     alignItems: "center",
   },
   loginBtn: {
     width: "100%",
     height: 70,
-    backgroundColor: "#d4d4d4",
+    backgroundColor: color.secondary,
+    alignItems: "center",
+    justifyContent: "space-around",
   },
   signUpBtn: {
     width: "100%",
     height: 70,
     backgroundColor: "#3ed",
+    alignItems: "center",
+    justifyContent: "space-around",
   },
   logo: {
     width: 100,
