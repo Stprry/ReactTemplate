@@ -18,7 +18,7 @@
       "supportsTablet": true
     },
     "web": {
-      "favicon": ".app/assets/favicon.png"
+      "favicon": ".app/assests/favicon.png"
     }
   }
 }
