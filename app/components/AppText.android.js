@@ -3,7 +3,7 @@ const styles = StyleSheet.create({
     color: color.secondary,
     android: {
       fontSize: 18,
-      fontFamily: "Roboto",
+      //fontFamily: "Roboto",
     },
   },
 });
